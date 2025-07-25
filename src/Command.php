@@ -4,15 +4,9 @@ namespace WPCLIShell;
 
 class Command {
     /**
-     * @var Settings
-     */
-    private $settings;
-
-    /**
      * Initialize the command handler
      */
-    public function __construct(Settings $settings) {
-        $this->settings = $settings;
+    public function __construct() {
         add_action('wp_ajax_execute_wp_cli', [$this, 'execute_command']);
     }
 
