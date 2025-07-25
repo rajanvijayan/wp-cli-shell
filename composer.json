@@ -1,0 +1,14 @@
+{
+    "name": "wp-cli-shell/wp-cli-shell",
+    "description": "WordPress plugin to execute WordPress commands through web interface",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "WPCLIShell\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.4"
+    }
+}

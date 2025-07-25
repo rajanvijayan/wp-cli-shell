@@ -1,0 +1,61 @@
+# Dependencies
+/vendor/
+/node_modules/
+composer.lock
+package-lock.json
+yarn.lock
+
+# IDE & System Files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Build & Dist Files
+/dist/
+/build/
+*.map
+
+# Environment Files
+.env
+.env.*
+!.env.example
+
+# Test Coverage
+/coverage/
+/tests/coverage/
+phpunit.xml
+.phpunit.result.cache
+
+# Logs
+*.log
+/logs/
+debug.log
+error_log
+access_log
+
+# Cache
+.cache/
+*.cache
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# WordPress specific
+*.pot
+*.po
+*.mo
+*.zip
+*.tar
+*.gz
+
+# Misc
+.sass-cache/
+*.css.map
+*.js.map
+.htaccess 

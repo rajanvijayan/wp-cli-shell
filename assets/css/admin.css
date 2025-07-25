@@ -1,0 +1,124 @@
+.wp-cli-shell-container {
+    margin-top: 20px;
+    background: #000000;
+    border: none;
+    padding: 20px;
+    font-family: "Courier New", Courier, monospace;
+    height: calc(100vh - 150px);
+    display: flex;
+    flex-direction: column;
+}
+
+.wp-cli-shell-output {
+    flex-grow: 1;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.4;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-y: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.wp-cli-shell-welcome {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.wp-cli-shell-prompt {
+    color: #00ff00;
+    margin-right: 10px;
+    user-select: none;
+}
+
+.wp-cli-shell-input-container {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.wp-cli-shell-input {
+    flex-grow: 1;
+    background: transparent !important;
+    border: none !important;
+    color: #00ff00 !important;
+    font-family: "Courier New", Courier, monospace !important;
+    font-size: 16px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    resize: none !important;
+    height: 24px !important;
+    line-height: 24px !important;
+    box-shadow: none !important;
+    outline: none !important;
+    caret-color: #00ff00 !important;
+}
+
+.wp-cli-shell-input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.error-message {
+    color: #ff0000;
+}
+
+.success-message {
+    color: #ffffff;
+}
+
+/* Hide the execute button */
+#wp-cli-shell-execute {
+    display: none;
+}
+
+/* Style for test output */
+.wp-cli-shell-test-output {
+    background: #000000;
+    padding: 15px;
+    border: 1px solid #333;
+    font-family: "Courier New", Courier, monospace;
+    margin-top: 10px;
+}
+
+.wp-cli-shell-test-output pre {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 14px;
+    line-height: 1.4;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Prevent text selection of prompt */
+::selection {
+    background: #444;
+    color: inherit;
+}
+
+/* Webkit scrollbar customization */
+.wp-cli-shell-output::-webkit-scrollbar {
+    width: 8px;
+}
+
+.wp-cli-shell-output::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+.wp-cli-shell-output::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 4px;
+}
+
+.wp-cli-shell-output::-webkit-scrollbar-thumb:hover {
+    background: #444;
+} 
